@@ -1,120 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Explore Art Work</title>
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div class="page">
-            <header class="top-bar">
-                <span class="see-all">See All</span>
-            </header>
-            <main class="gallery-section">
-                <h2 class="section-title">Explore Art Work</h2>
-                <div class="grid">
-                    <div class="card">
-                        <div class="card-img-wrap">
-                            <img src="https://i.imgur.com/2nCt3Sbl.jpg" alt="Monocular" class="card-img">
-                        </div>
-                        <div class="card-footer">
-                            <div class="card-meta">
-                                <span class="card-name">Monocular</span>
-                                <span class="card-stats">54.8k <span class="heart">♡</span></span>
-                            </div>
-                            <button class="bid-btn">Place Bid</button>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-img-wrap">
-                            <img src="https://i.imgur.com/7XyqVBbl.jpg" alt="Horns Mask" class="card-img">
-                        </div>
-                        <div class="card-footer">
-                            <div class="card-meta">
-                                <span class="card-name">Horns Mask</span>
-                                <span class="card-stats">32.4k <span class="heart">♡</span></span>
-                            </div>
-                            <button class="bid-btn">Place Bid</button>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-img-wrap">
-                            <img src="https://i.imgur.com/9o5iUvzl.jpg" alt="Light Moon" class="card-img">
-                        </div>
-                        <div class="card-footer">
-                            <div class="card-meta">
-                                <span class="card-name">Light Moon</span>
-                                <span class="card-stats">88.6k <span class="heart">♡</span></span>
-                            </div>
-                            <button class="bid-btn">Place Bid</button>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-img-wrap">
-                            <img src="https://i.imgur.com/CzXTtVbl.jpg" alt="Skull Wire" class="card-img">
-                        </div>
-                        <div class="card-footer">
-                            <div class="card-meta">
-                                <span class="card-name">Skull Wire</span>
-                                <span class="card-stats">78.9k <span class="heart">♡</span></span>
-                            </div>
-                            <button class="bid-btn">Place Bid</button>
-                        </div>
-                    </div>
-                    <div class="card card--active">
-                        <div class="card-img-wrap">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSqjD5T2qY6nVcaNGEEeD0WMk2tDVV1KY-OEYOjBnuQEO69Mh8C6OiSEX-BZHku4bRGwsR2Fq37byMdCktth4siNuFO3OMiQMuIEBJSq15&s=10" alt="Spiderman" class="card-img">
-                        </div>
-                        <div class="card-footer">
-                            <div class="card-meta">
-                                <span class="card-name">Spiderman</span>
-                                <span class="card-stats">24.8k <span class="heart">♡</span></span>
-                            </div>
-                            <button class="bid-btn bid-btn--active">Place Bid</button>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-img-wrap">
-                            <img src="data:image/jpeg;base64,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" alt="DeadPool" class="card-img">
-                        </div>
-                        <div class="card-footer">
-                            <div class="card-meta">
-                                <span class="card-name">DeadPool</span>
-                                <span class="card-stats">59.7k <span class="heart">♡</span></span>
-                            </div>
-                            <button class="bid-btn">Place Bid</button>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-img-wrap">
-                            <img src="https://i.imgur.com/5J9aRbl.jpg" alt="White Eye" class="card-img">
-                        </div>
-                        <div class="card-footer">
-                            <div class="card-meta">
-                                <span class="card-name">White Eye</span>
-                                <span class="card-stats">45.7k <span class="heart">♡</span></span>
-                            </div>
-                            <button class="bid-btn">Place Bid</button>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-img-wrap">
-                            <img src="https://i.imgur.com/n8bD3bl.jpg" alt="Plastic Spinal" class="card-img">
-                        </div>
-                        <div class="card-footer">
-                            <div class="card-meta">
-                                <span class="card-name">Plastic Spinal</span>
-                                <span class="card-stats">98.6k <span class="heart">♡</span></span>
-                            </div>
-                            <button class="bid-btn">Place Bid</button>
-                        </div>
-                    </div>
-                </div>
-            </main>
-            <div class="side-dot side-dot--left"></div>
-            <div class="side-dot side-dot--right"></div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Art Work</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="page">
+    <header class="top-bar">
+      <span class="see-all">See All</span>
+    </header>
+    <main class="gallery-section">
+      <h2 class="section-title">Explore Art Work</h2>
+      <div class="grid">
+        
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1517511620798-cec17d428bc0?auto=format&fit=crop&w=400&q=80" alt="Monocular" class="card-img">
+          </div>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="card-name">Monocular</span>
+              <span class="card-stats">54.8k <span class="heart">♡</span></span>
+            </div>
+            <button class="bid-btn">Place Bid</button>
+          </div>
         </div>
-    </body>
+
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=400&q=80" alt="Horns Mask" class="card-img">
+          </div>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="card-name">Horns Mask</span>
+              <span class="card-stats">32.4k <span class="heart">♡</span></span>
+            </div>
+            <button class="bid-btn">Place Bid</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1522030299812-856980ee9e41?auto=format&fit=crop&w=400&q=80" alt="Light Moon" class="card-img">
+          </div>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="card-name">Light Moon</span>
+              <span class="card-stats">88.6k <span class="heart">♡</span></span>
+            </div>
+            <button class="bid-btn">Place Bid</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1505909182942-e2f09aee3e89?auto=format&fit=crop&w=400&q=80" alt="Skull Wire" class="card-img">
+          </div>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="card-name">Skull Wire</span>
+              <span class="card-stats">78.9k <span class="heart">♡</span></span>
+            </div>
+            <button class="bid-btn">Place Bid</button>
+          </div>
+        </div>
+
+        <div class="card card--active">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1635805737707-575885ab0820?auto=format&fit=crop&w=400&q=80" alt="Spiderman" class="card-img">
+          </div>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="card-name">Spiderman</span>
+              <span class="card-stats">24.8k <span class="heart">♡</span></span>
+            </div>
+            <button class="bid-btn bid-btn--active">Place Bid</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1608889825103-eb5ed706fc64?auto=format&fit=crop&w=400&q=80" alt="DeadPool" class="card-img">
+          </div>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="card-name">DeadPool</span>
+              <span class="card-stats">59.7k <span class="heart">♡</span></span>
+            </div>
+            <button class="bid-btn">Place Bid</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&w=400&q=80" alt="White Eye" class="card-img">
+          </div>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="card-name">White Eye</span>
+              <span class="card-stats">45.7k <span class="heart">♡</span></span>
+            </div>
+            <button class="bid-btn">Place Bid</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1530103043960-ef38714abb15?auto=format&fit=crop&w=400&q=80" alt="Plastic Spinal" class="card-img">
+          </div>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="card-name">Plastic Spinal</span>
+              <span class="card-stats">98.6k <span class="heart">♡</span></span>
+            </div>
+            <button class="bid-btn">Place Bid</button>
+          </div>
+        </div>
+
+      </div>
+    </main>
+    <div class="side-dot side-dot--left"></div>
+    <div class="side-dot side-dot--right"></div>
+  </div>
+</body>
 </html>
