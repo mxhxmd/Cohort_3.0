@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #fcf9f2;
+  color: #333333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #ffffff;
+  border-bottom: 2px solid #eeeeee;
+}
+
+.logo h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 35px;
+  color: #e8391d;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: bold;
+}
+
+.nav-links .active {
+  color: #2d6a2d;
+}
+
+.nav-right {
+  font-weight: bold;
+  color: #666666;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-text {
+  width: 35%;
+}
+
+.badge {
+  background-color: #2d6a2d;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  display: inline-block;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.hero-text h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 60px;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #2d6a2d;
+}
+
+.hero-text p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.actions {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background-color: #e8391d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.qty-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+.qty-box button {
+  background-color: #eeeeee;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.qty-box span {
+  padding: 0 15px;
+  font-weight: bold;
+}
+
+.features {
+  list-style: none;
+}
+
+.features li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.hero-image {
+  width: 30%;
+  text-align: center;
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.hero-flavors {
+  width: 25%;
+}
+
+.flavor-box {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.flavor-box h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.flavor-box p {
+  font-size: 13px;
+  color: #666666;
+}
+
+.products-section {
+  background-color: #ffffff;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.section-header h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 35px;
+}
+
+.product-grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-card {
+  width: 30%;
+  text-align: center;
+  border: 1px solid #eeeeee;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.product-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 20px;
+  color: #e8391d;
+  margin: 10px 0;
+}
+
+.btn-small {
+  background-color: #333333;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
