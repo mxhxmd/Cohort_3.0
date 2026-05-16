@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #111219;
+    padding: 20px;
+
+}
+
+@font-face {
+  font-family: 'suisse';
+  src: url('SuisseIntl-Bold.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: 1.2fr 1fr 0.8fr 1.2fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "excuse playstore intl     strength"
+    "excuse flexfit   flexfit  strength"
+    "goal   flexfit   flexfit  strength"
+    "girl   girl      ropegirl signup";
+    height: 95vh;
+    gap: 15px;;
+}
+
+.excuse{
+    background-image: url('model.jpg');
+    background-size: cover;
+    background-position: top;  
+    background-repeat: no-repeat;
+  
+    grid-area: excuse;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.circle{
+    background-color: black;
+    height: 45px;
+    width: 45px;
+    border-radius: 100px;
+    display: grid;
+    place-items: center;
+}
+
+.circleimg{
+    width: 40px;
+    height: auto;
+}
+
+.exercises{
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+    gap: 10px;
+    justify-content: center;
+}
+
+.ex1{
+    width: 75px;
+    height: 55px;
+    border-radius: 10px;
+    background-color: rgba(17, 18, 25, 0.6);
+}
+
+.ex1c, .ex2c, .ex3c{
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+    background-color: #FEE238;
+    margin:7px;
+}
+
+.ex2{
+    width: 80px;
+    height: 55px;
+    border-radius: 10px;
+    background-color: rgba(17, 18, 25, 0.6);
+}
+
+.playstore{
+    background-color: #FEE238;
+    grid-area: playstore;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+#playstoreimg1{
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 15%;
+}
+
+.storep{
+    font-family: 'suisse';
+    font-weight: 100;
+    font-size: 12px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.store {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding: 10px 35px;
+}
+
+.store img {
+    width: 110px;
+    height: auto;
+    margin-top: 2px;
+}   
+
+.goal{
+    background-color: #FDFDFD;
+    grid-area: goal;
+    border-radius: 40px;
+}
+
+.girl{
+    background-color: #EDB1A3;
+    grid-area: girl;
+    border-radius: 40px;
+}
+
+.flexfit{
+    background-color: #FDF6E2;
+    grid-area: flexfit;
+    border-radius: 40px;
+    display: grid;
+    place-items: center;
+}
+
+#flexfitimg{
+    width: 500px;
+}
+
+.intl{
+    background-color: #FEFDFE;
+    grid-area: intl;
+    border-radius: 40px;
+}
+
+.ropegirl{
+    background-color: #C7B9B4;
+    grid-area: ropegirl;
+    border-radius: 40px;
+}
+
+.strength{
+    background-color: #fffeff;
+    grid-area: strength;
+    border-radius: 40px;
+}
+
+.signup{
+    background-color: #EDB1A2;
+    grid-area: signup;
+    border-radius: 40px;
+}
